@@ -6,7 +6,6 @@ RUN apt update && \
     
 RUN curl -sSL https://install.pi-hole.net | bash
 
-EXPOSE 80
-EXPOSE 53
+EXPOSE 53, 53/UDP, 80
 
 ENTRYPOINT
